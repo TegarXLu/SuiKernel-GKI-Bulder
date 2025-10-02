@@ -79,9 +79,6 @@ jobs:
 
       - name: Validate Inputs and Secrets
         env:
-          TG_CHAT_ID: ${{ secrets.TG_CHAT_ID }} # telegram chat id
-          TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }} # telegram bot token
-          GH_TOKEN: ${{ secrets.GH_TOKEN }} # github token
           KSU: ${{ inputs.KSU }}
           KSU_SUSFS: ${{ inputs.KSU_SUSFS }}
           KSU_MANUAL_HOOK: ${{ inputs.KSU_MANUAL_HOOK }}
@@ -90,18 +87,6 @@ jobs:
               echo "❌ ERROR: $*"
               let ret++
           }
-
-          ret=0
-          # Check Secrets
-          if [[ -z "$TG_CHAT_ID" ]]; then
-            _error "Missing TG_CHAT_ID secret (Telegram Chat ID)"
-          fi
-          if [[ -z "$TG_BOT_TOKEN" ]]; then
-            _error "Missing TG_BOT_TOKEN secret (Telegram bot token)"
-          fi
-          if [[ -z "$GH_TOKEN" ]]; then
-            _error "Missing GH_TOKEN secret (Github Token)"
-          fi
 
           # Check KernelSU variants
           if [[ $KSU == "None" && $KSU_SUSFS == "true" ]]; then
@@ -126,9 +111,6 @@ jobs:
 
       - name: Run Build Script
         env:
-          TG_CHAT_ID: ${{ secrets.TG_CHAT_ID }} # telegram chat id
-          TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }} # telegram bot token
-          GH_TOKEN: ${{ secrets.GH_TOKEN }} # github token
           KSU: ${{ inputs.KSU }}
           KSU_SUSFS: ${{ inputs.KSU_SUSFS }}
           KSU_MANUAL_HOOK: ${{ inputs.KSU_MANUAL_HOOK }}
