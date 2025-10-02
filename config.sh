@@ -16,8 +16,8 @@ KERNEL_DEFCONFIG="gki_defconfig"
 # Release repository
 GKI_RELEASES_REPO="https://github.com/LoggingNewMemory/SuiKernel-Release"
 # Clang
-CLANG_URL="https://github.com/ZyCromerZ/Clang"
-CLANG_BRANCH="22.0.0git-20250905"
+CLANG_URL="https://github.com/llvm/llvm-project"
+CLANG_BRANCH="llvmorg-21.1.2"
 # Zip name
 # Format: Kernel_name-Linux_version-Variant-Build_date
 ZIP_NAME="$KERNEL_NAME-KVER-VARIANT-BUILD_DATE.zip"
