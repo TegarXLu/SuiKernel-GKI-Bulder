@@ -42,7 +42,7 @@ on:
 
       KSU:
         description: KernelSU variant
-        default: "suki"
+        default: "Suki"
         type: choice
         options:
           - "None"
