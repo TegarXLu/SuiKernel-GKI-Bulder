@@ -11,7 +11,7 @@ ANYKERNEL_REPO="https://github.com/TegarXLu/AnyKernel3"
 ANYKERNEL_BRANCH="main"
 # Kernel Source
 KERNEL_REPO="https://github.com/marble-indonesia/kernel_xiaomi_sm8450"
-KERNEL_BRANCH="update_kernel"
+KERNEL_BRANCH="update-kernel"
 KERNEL_DEFCONFIG="gki_defconfig"
 # Release repository
 GKI_RELEASES_REPO="https://github.com/LoggingNewMemory/SuiKernel-Release"
