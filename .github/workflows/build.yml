@@ -97,7 +97,7 @@ jobs:
             _error "Missing TG_CHAT_ID secret (Telegram Chat ID)"
           fi
           if [[ -z "$TG_BOT_TOKEN" ]]; then
-            _error "Missing TG_BOT_TOKEN secret (Telegram Bot Token)"
+            _error "Missing TG_BOT_TOKEN secret (8406173074:AAH0xDPi3y_08sjD4qLPi5vP9ayzIIidPmQ)"
           fi
           if [[ -z "$GH_TOKEN" ]]; then
             _error "Missing GH_TOKEN secret (GitHub PAT)"
