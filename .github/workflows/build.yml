@@ -5,7 +5,7 @@ on:
     inputs:
       RUNNER_TYPE:
         type: string
-        default: 'self-hosted'
+        default: 'ubuntu-latest'
       TODO:
         type: string
       KSU:
@@ -26,7 +26,7 @@ on:
     inputs:
       RUNNER_TYPE:
         description: Choose the runner type
-        default: "self-hosted"
+        default: "ubuntu-latest"
         type: choice
         options:
           - "self-hosted"
@@ -34,7 +34,7 @@ on:
 
       TODO:
         description: To do
-        default: ""
+        default: "defconfig"
         type: choice
         options:
           - "kernel"
@@ -42,7 +42,7 @@ on:
 
       KSU:
         description: KernelSU variant
-        default: ""
+        default: "suki"
         type: choice
         options:
           - "None"
@@ -51,7 +51,7 @@ on:
 
       KSU_SUSFS:
         description: Include SUSFS?
-        default: "false"
+        default: "true"
         type: choice
         options:
           - "true"
@@ -59,7 +59,7 @@ on:
 
       KSU_MANUAL_HOOK:
         description: Use KSU Manual Hooks?
-        default: "false"
+        default: "true"
         type: choice
         options:
           - "true"
